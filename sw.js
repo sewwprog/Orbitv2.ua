@@ -2,15 +2,15 @@
 
 // Change this version whenever the deployed app shell changes.
 const CACHE_PREFIX = `orbit-shell:${self.registration.scope}:`;
-const CACHE_NAME = `${CACHE_PREFIX}v1`;
+const CACHE_NAME = `${CACHE_PREFIX}v2-charts`;
 const SCOPE = new URL(self.registration.scope);
 const APP_SHELL = new URL('index.html', SCOPE).href;
 const SHELL_URLS = [
   APP_SHELL,
   new URL('manifest.webmanifest', SCOPE).href,
-  new URL('icons/icon-192.png', SCOPE).href,
-  new URL('icons/icon-512.png', SCOPE).href,
-  new URL('icons/apple-touch-icon.png', SCOPE).href
+  new URL('icon-192.png', SCOPE).href,
+  new URL('icon-512.png', SCOPE).href,
+  new URL('apple-touch-icon.png', SCOPE).href
 ];
 
 self.addEventListener('install', event => {
