@@ -189,6 +189,82 @@
 /* Graph blocks and editor use the same visual language as the board. */
 .graph-node{padding-bottom:14px}.graph-heading{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.graph-heading>strong{font-size:17px;overflow-wrap:anywhere;min-width:0}.graph-heading>span{text-align:right;flex-shrink:0;font-size:22px;font-weight:600}.graph-heading small{display:block;font-size:10px;font-weight:400}.graph-up{color:#63d6b0}.graph-down{color:#f38fad}.graph-plot{position:relative;margin-top:12px}.graph-plot svg{width:100%;display:block;overflow:visible}.graph-plot [role=button]{cursor:pointer;outline:none}.graph-plot [role=button]:focus circle:last-child{stroke:#fff;stroke-width:3}.graph-tooltip{position:absolute;right:8px;top:5px;max-width:75%;display:flex;flex-direction:column;gap:3px;padding:10px 13px;background:#11111bf5;border:1px solid #544968;border-radius:9px;box-shadow:0 8px 24px #0006;pointer-events:none;font-size:12px;overflow-wrap:anywhere;z-index:2}.graph-tooltip small{color:#a6a0b4}.graph-tooltip strong{color:#eeeaf3}.graph-empty{position:absolute;inset:35% 10%;text-align:center;color:#9a90aa;font-size:14px;pointer-events:none}.graph-controls{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:8px}.graph-controls .btn{font-size:12px;min-height:34px;padding:6px 10px}.graph-controls .icon-btn{min-width:32px;min-height:32px;width:32px;height:32px}.graph-node .resize-handle{font-size:16px}.graph-editor-preview{background:#0f1017;border:1px solid #ffffff0c;border-radius:12px;padding:10px}.graph-editor-preview .graph-plot{margin:0}.sheet.chart-sheet{width:700px}.graph-options{margin-top:10px}.graph-options .toggle-row{font-size:13px;min-height:38px}.graph-period{margin-top:20px;border:1px solid #ffffff12;border-radius:10px;padding:12px}.graph-period summary{cursor:pointer;color:#bfb6d0;font-size:13px}.graph-point-form .field-label{margin-top:12px}.graph-form-actions{display:flex;gap:8px;flex-wrap:wrap}.graph-form-actions .btn{font-size:13px}.graph-error{color:#f38fad;font-size:13px;padding:5px 0 12px}.graph-table-heading{display:flex;align-items:center;justify-content:space-between;margin:22px 0 10px}.graph-table-heading h3,.chart-sheet h3{font-size:15px;font-weight:600}.graph-table-heading .btn{font-size:12px;min-height:32px}.graph-table-wrap{overflow:auto;max-height:300px;border:1px solid #ffffff10;border-radius:10px}.graph-table{width:100%;font-size:12px;text-align:left;border-collapse:collapse}.graph-table th{position:sticky;top:0;background:#1d1b26;color:#a99ebc;font-weight:500}.graph-table td,.graph-table th{padding:8px 10px;border-bottom:1px solid #ffffff0b;white-space:nowrap}.graph-note-cell{max-width:180px;overflow:hidden;text-overflow:ellipsis}.graph-row-actions{display:flex;gap:2px}.graph-row-actions .icon-btn{min-height:30px;min-width:30px;width:30px;height:30px}.graph-row-active{background:#a48aff16}.graph-done{margin-top:20px}.graph-add-tool{color:#bda2ef}
 @media(max-width:600px){.sheet.chart-sheet{width:100%;padding:24px 18px}.graph-heading{flex-wrap:wrap}.graph-heading>span{text-align:left}.chart-sheet .form-grid{grid-template-columns:1fr 1fr;gap:10px}.chart-sheet .field-label{min-width:0}.chart-sheet input,.chart-sheet select{min-width:0;width:100%}.graph-note-cell{max-width:100px}.main-toolbar{max-width:calc(100vw - 20px);overflow-x:auto;scrollbar-width:none}.main-toolbar .tool-button{flex-shrink:0;min-width:38px}.graph-form-actions .btn{flex:1}.chart-sheet .graph-point-form .form-grid,.chart-sheet .graph-period .form-grid{grid-template-columns:1fr}.graph-table td,.graph-table th{padding:7px}.graph-table-wrap{max-height:240px}}
+</style><style id="orbit-mobile-v3">
+/* Orbit Mobile v3 — touch-first phone layout */
+:root{--safe-top:env(safe-area-inset-top,0px);--safe-right:env(safe-area-inset-right,0px);--safe-bottom:env(safe-area-inset-bottom,0px);--safe-left:env(safe-area-inset-left,0px)}
+html,body,#root{overscroll-behavior:none}
+body{padding-bottom:var(--safe-bottom)}
+@media (max-width:700px){
+  body{font-size:15px}
+  .dash-header{height:64px;padding:var(--safe-top) 16px 0;box-sizing:content-box;gap:10px}
+  .brand{font-size:22px;letter-spacing:-.8px}
+  .brand-mark{width:32px;height:32px;border-radius:9px}
+  .header-divider,.workspace-name,.local-badge{display:none}
+  .dash-main{padding:28px 14px calc(28px + var(--safe-bottom))}
+  .dash-intro{display:block;margin-bottom:22px}
+  .dash-intro h1{font-size:28px;gap:10px;line-height:1.15}
+  .dash-intro p{font-size:13px;margin-top:8px}
+  .dash-intro .btn{width:100%;margin-top:16px}
+  .count-badge{font-size:12px}
+  .dash-filters{margin-bottom:16px;padding-bottom:10px;gap:8px}
+  .search-field{flex:1;min-width:0;height:44px}
+  .dash-filters .btn{min-width:44px;padding:8px}
+  .boards-grid{grid-template-columns:1fr;gap:12px}
+  .board-card{border-radius:14px}
+  .preview-area{height:150px;padding:16px 10px}
+  .card-details{padding:15px 52px 15px 16px}
+  .create-card{min-height:150px;border-radius:14px}
+  .dash-footer{margin-top:24px;padding-top:18px}
+  .dash-footer button{width:100%;margin:8px 0 0}
+  .mobile-create{display:flex}
+  .sheet-overlay{align-items:flex-end;padding:0}
+  .sheet{width:100%;max-width:none;max-height:92dvh;padding:22px 16px calc(18px + var(--safe-bottom));border-radius:22px 22px 0 0;border-left:0;border-right:0;border-bottom:0}
+  .sheet-grip{display:block;position:absolute;top:8px;left:50%;width:42px;height:4px;border-radius:99px;background:#ffffff24;transform:translateX(-50%)}
+  .sheet h2{font-size:21px}
+  .sheet-emblem{width:46px;height:46px;margin-bottom:15px}
+  .form-grid,.menu-grid,.node-actions{grid-template-columns:1fr}
+  .field-label{font-size:13px}
+  input,select{min-height:50px}
+  .menu-row{min-height:60px}
+  .help-sheet{width:100%}
+  .toast{bottom:calc(76px + var(--safe-bottom));max-width:calc(100vw - 24px)}
+  .editor{height:var(--app-height,100dvh)!important;top:var(--app-top,0)!important;inset-inline:0;bottom:auto}
+  .editor-header{height:58px;padding:var(--safe-top) 10px 0;box-sizing:content-box;gap:8px}
+  .editor-brand .brand{font-size:20px}
+  .editor-brand .brand-mark{width:29px;height:29px}
+  .editor-heading{flex:1;min-width:0}
+  .board-title{max-width:100%;font-size:13px}
+  .save-status{font-size:10px}
+  .editor-block-count{display:none}
+  .editor-export{display:none}
+  .editor-header .btn{min-width:40px;min-height:40px;padding:7px}
+  .canvas{inset:58px 0 0}
+  .node{padding:0 14px 13px;border-radius:12px}
+  .node-head{height:44px}
+  .node-kind{font-size:11px}
+  .node-menu{width:34px;height:40px}
+  .node-actions{gap:8px}
+  .node-actions .btn,.graph-controls .btn,.graph-form-actions .btn{min-height:46px}
+  .graph-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .graph-table{min-width:560px}
+  .graph-editor-preview{overflow:hidden;border-radius:12px}
+  .graph-controls{flex-wrap:wrap}
+  .graph-controls .btn{flex:1;min-width:44px}
+  .graph-point-form .form-grid{grid-template-columns:1fr}
+  .graph-form-actions{display:grid;grid-template-columns:1fr;gap:8px}
+  .graph-done{position:sticky;bottom:calc(8px + var(--safe-bottom));z-index:5}
+}
+@media (max-width:380px){
+  .dash-main{padding-left:10px;padding-right:10px}
+  .dash-intro h1{font-size:25px}
+  .preview-area{height:132px}
+  .sheet{padding-left:13px;padding-right:13px}
+}
+@media (pointer:coarse){
+  button,.btn,.icon-btn,.node-menu{min-height:44px}
+  .node{touch-action:none}
+  input,select,textarea{font-size:16px!important}
+}
 </style></head><body><div id="root"></div><noscript>Для роботи Orbit увімкніть JavaScript у браузері.</noscript><script>"use strict";(()=>{var vf=Object.create;var fu=Object.defineProperty;var gf=Object.getOwnPropertyDescriptor;var yf=Object.getOwnPropertyNames;var wf=Object.getPrototypeOf,kf=Object.prototype.hasOwnProperty;var at=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports);var xf=(e,t,n,r)=>{if(t&&typeof t=="object"||typeof t=="function")for(let o of yf(t))!kf.call(e,o)&&o!==n&&fu(e,o,{get:()=>t[o],enumerable:!(r=gf(t,o))||r.enumerable});return e};var ct=(e,t,n)=>(n=e!=null?vf(wf(e)):{},xf(t||!e||!e.__esModule?fu(n,"default",{value:e,enumerable:!0}):n,e));var Eu=at(O=>{"use strict";/**
  * @license React
  * react.production.min.js
@@ -380,5 +456,11 @@ Ym=Ne.memo(props=>graphH(props.n.type==='chart'?GraphNode:graphOriginalNode,prop
       navigator.serviceWorker.register('./sw.js').catch(error => console.warn('Orbit offline setup:', error));
     }, { once: true });
   }
+})();
+</script><script id="orbit-mobile-v3-js">
+(()=>{const root=document.documentElement,v=window.visualViewport;let raf=0;
+const sync=()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{const h=v?.height||window.innerHeight;root.style.setProperty('--app-height',h+'px');root.style.setProperty('--app-top',(v?.offsetTop||0)+'px');});};
+window.addEventListener('resize',sync,{passive:true});v?.addEventListener('resize',sync,{passive:true});v?.addEventListener('scroll',sync,{passive:true});sync();
+document.addEventListener('touchstart',e=>{if(e.touches.length>1)e.preventDefault()},{passive:false});
 })();
 </script></body></html>
