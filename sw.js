@@ -2,7 +2,7 @@
 
 // Change this version whenever the deployed app shell changes.
 const CACHE_PREFIX = `orbit-shell:${self.registration.scope}:`;
-const CACHE_NAME = `${CACHE_PREFIX}v2-charts`;
+const CACHE_NAME = `${CACHE_PREFIX}v3-glass`;
 const SCOPE = new URL(self.registration.scope);
 const APP_SHELL = new URL('index.html', SCOPE).href;
 const SHELL_URLS = [
