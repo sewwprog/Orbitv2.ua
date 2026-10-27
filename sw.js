@@ -2,7 +2,7 @@
 
 // Change this version whenever the deployed app shell changes.
 const CACHE_PREFIX = `orbit-shell:${self.registration.scope}:`;
-const CACHE_NAME = `${CACHE_PREFIX}v3-glass`;
+const CACHE_NAME = `${CACHE_PREFIX}v4-responsive-glass`;
 const SCOPE = new URL(self.registration.scope);
 const APP_SHELL = new URL('index.html', SCOPE).href;
 const SHELL_URLS = [
@@ -14,7 +14,13 @@ const SHELL_URLS = [
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL_URLS)));
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    await cache.addAll(SHELL_URLS);
+    // The app shell is self-contained, so the new worker can replace a stale
+    // offline copy without waiting for every open tab to be closed.
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener('activate', event => {
